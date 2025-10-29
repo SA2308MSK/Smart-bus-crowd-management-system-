@@ -1,0 +1,44 @@
+body {
+  font-family: Poppins, sans-serif;
+  background: #f3f7fb;
+  color: #222;
+  margin: 0;
+  text-align: center;
+}
+header {
+  background: #007bff;
+  color: white;
+  padding: 20px;
+  border-radius: 0 0 30px 30px;
+}
+.dashboard, .ticketSection, .tableSection {
+  background: white;
+  margin: 20px auto;
+  width: 90%;
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+button {
+  padding: 10px 20px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+}
+button:hover { background: #218838; }
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+footer {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 20px 20px 0 0;
+}
