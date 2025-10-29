@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Bus Crowd Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🚌 Smart Bus Crowd Management System</h1>
+    <p>AI + IoT based Real-Time Bus Monitoring</p>
+  </header>
+
+  <section class="dashboard">
+    <h2>Live Bus Dashboard</h2>
+    <div id="busStatus">
+      <p><strong>Bus No:</strong> 335E</p>
+      <p><strong>Location:</strong> Majestic → Silk Board</p>
+      <p><strong>Current Crowd:</strong> <span id="crowdCount">35</span>/50</p>
+      <p><strong>Vacant Seats:</strong> <span id="vacantSeats">15</span></p>
+      <p><strong>Next Stop:</strong> <span id="nextStop">Shantinagar</span></p>
+      <p><strong>Status:</strong> <span id="status">Normal ✅</span></p>
+    </div>
+    <button onclick="generateTicket()">🎟 Generate Ticket</button>
+  </section>
+
+  <section class="ticketSection">
+    <h2>Passenger Ticket</h2>
+    <div id="ticketBox"></div>
+  </section>
+
+  <section class="tableSection">
+    <h2>Stop-wise Passenger Update</h2>
+    <table>
+      <thead>
+        <tr><th>Stop</th><th>Boarded</th><th>Got Down</th><th>Current</th></tr>
+      </thead>
+      <tbody id="stopTable">
+        <tr><td>Majestic</td><td>20</td><td>0</td><td>20</td></tr>
+        <tr><td>Shantinagar</td><td>10</td><td>5</td><td>25</td></tr>
+        <tr><td>BTM</td><td>8</td><td>3</td><td>30</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    <p>© 2025 Smart Transit | SDG 9, 11, 13 Aligned 🌍</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
